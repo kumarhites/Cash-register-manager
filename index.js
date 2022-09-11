@@ -26,6 +26,7 @@ checkBtn.addEventListener("click", function validateBillAndCashAmount(e) {
 	e.preventDefault();
 	hideMessage();
 	if(Number(billInput.value) <= 0 || Number(cashInput.value) <= 0){
+		changeTable.style.display = "none";
 		showMessage("Please enter a valid amount!");
 	}
 	else if(Number(cashInput.value) >= Number(billInput.value)){
