@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;700&display=swap');
+:root{
+    --font: 'Zilla Slab', serif;
+    --background: #082032;
+    --foreground: #2C394B;
+    --accent: #FF4C29
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background);
+    color: var(--accent);
+}
+.container{
+    border: 1px solid white;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--foreground);
+}
+#error-message, caption{
+    font-weight: 700;
+}
+#heading{
+    margin: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+#desc{
+    margin: 10px;
+    font-size: 16px;
+    color: aliceblue;
+}
+#bill-label, #cash-label{
+    margin: 10px;
+    font-size: 16px;
+    text-align: left;
+    color: aliceblue;
+}
+#bill-amount, #cash-given{
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    border-radius: 5px;
+    background-color: var(--background);
+    color: aliceblue;
+}
+#bill-amount:focus, #cash-given:focus{
+    border-bottom: 1px solid black;
+}
+#checkBtn{
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 700;
+}
+.change-table{
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.table{
+    width: 100%;
+    margin: 20px;
+}
+@media screen and (min-width: 764px) {
+    .container{
+        width: 60%;
+    }
+  }
